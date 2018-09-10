@@ -96,12 +96,57 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.index {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.index form {
+  margin: auto;
+  width: 62%;
+  text-align: center;
+
+}
+
+.index input[type='password'] {
+  width: 100%
+}
 
 
+/* --------------- Secret page ------------- */
+.secret {
+  color: darkorange;
+  background: black;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.secret img {
+  height: 100%;
+  max-height: 320px;
+  width: 100%;
+  max-width: 455px;
+}
 
+.secret a {
+  color: darkorange;
+  text-decoration: none;
+  border: 1px solid darkorange;
+  padding: 11px;
+  font-size: 1.5rem;
+}
 
+.secret a:hover {
 
+  color: black;
+  background-color: darkorange;
+}
 
 
 
