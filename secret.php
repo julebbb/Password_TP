@@ -21,18 +21,20 @@
 
    $correct_password = "kangourou";
 
-   if ($_POST['password'] == $correct_password) {
+   if (isset($_POST['password']) AND $_POST['password'] == $correct_password) {
 
-     echo "Les chat conquerront le monde !" . '<img src="img/eyes-cat.png" alt="Yeux de chat"> ' . "</br>";
+     echo "Les chats conquerront le monde !" . '<img src="img/eyes-cat.png" alt="Yeux de chat"> ' . "</br>";
 
    } else {
-     echo "Wrong !";
+
+     header('Location: http://localhost/tpMotdepasse/index.html');
+     exit;
    }
 
     ?>
  </head>
 
- <body>
+ <body class="secret">
    <!--[if lte IE 9]>
      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
    <![endif]-->
